@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "settings"
+version = "0.1.0"
+description = "Mastodon/usr/games/fortune"
+authors = ["Tom Ritchford <tom@swirly.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+lfortune = "^0.3.2"
+fortunes-freebsd-classic = "^2021.8.7"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
