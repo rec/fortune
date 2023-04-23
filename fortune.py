@@ -4,7 +4,7 @@ import subprocess
 import time
 import traceback
 
-
+ENABLE_SEND = True
 KWARGS = {'text': True, 'stdout': subprocess.PIPE}
 MAX_LEN = 500
 ACCESS_TOKEN = open('access-token.txt').read().strip()
@@ -34,7 +34,8 @@ def main():
         f = get_fortune()
         print('\n' + f + TAGS)
         try:
-            mastodon().status_post(f + TAGS)
+            if ENABLE_SEND:
+                mastodon().status_post(f + TAGS)
         except Exception:
             traceback.print_exc()
         time.sleep(DELAY)
