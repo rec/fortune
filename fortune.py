@@ -31,13 +31,13 @@ def get_fortune():
 
 def main():
     while True:
-        time.sleep(DELAY)
         f = get_fortune()
         print('\n' + f + TAGS)
         try:
             mastodon().status_post(f + TAGS)
         except Exception:
             traceback.print_exc()
+        time.sleep(DELAY)
 
 
 if __name__ == '__main__':
