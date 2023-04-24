@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "settings"
 version = "0.1.0"
-description = "Mastodon/usr/games/fortune"
+description = "🐘 A Mastodon bot for /usr/games/fortune 🐘"
 authors = ["Tom Ritchford <tom@swirly.com>"]
 license = "MIT"
 readme = "README.md"
