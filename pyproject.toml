@@ -13,6 +13,9 @@ fortunes-freebsd-classic = "^2021.8.7"
 mastodon-py = "^1.8.0"
 numpy = "^1.24.2"
 
+
+[tool.mypy]
+strict = true
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
