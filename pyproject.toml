@@ -1,21 +1,29 @@
-[tool.poetry]
+[project]
 name = "settings"
 version = "0.1.0"
 description = "🐘 A Mastodon bot for /usr/games/fortune 🐘"
-authors = ["Tom Ritchford <tom@swirly.com>"]
-license = "MIT"
+authors = [{ name = "Tom Ritchford", email = "tom@swirly.com" }]
+requires-python = ">=3.11,<4"
 readme = "README.md"
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = [
+    "lfortune>=0.3.2,<0.4",
+    "fortunes-freebsd-classic>=2021.8.7,<2022",
+    "mastodon-py>=1.8.0,<2",
+    "numpy>=1.24.2,<2",
+]
 
-[tool.poetry.dependencies]
-python = "^3.11"
-lfortune = "^0.3.2"
-fortunes-freebsd-classic = "^2021.8.7"
-mastodon-py = "^1.8.0"
-numpy = "^1.24.2"
+[build-system]
+requires = ["uv_build>=0.9.0,<0.10.0"]
+build-backend = "uv_build"
 
 
 [tool.mypy]
 strict = true
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
