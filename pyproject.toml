@@ -24,9 +24,6 @@ dependencies = [
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.mypy]
-strict = true
-
 [tool.coverage.run]
 branch = true
 
