@@ -16,10 +16,7 @@ MSG_LEN = MAX_LEN - len(TAGS)
 
 
 def mastodon():
-    return Mastodon(
-        access_token = ACCESS_TOKEN,
-        api_base_url = 'https://botsin.space/'
-    )
+    return Mastodon(access_token=ACCESS_TOKEN, api_base_url='https://botsin.space/')
 
 
 def get_fortune():
