@@ -6,13 +6,7 @@ authors = [{ name = "Tom Ritchford", email = "tom@swirly.com" }]
 requires-python = ">=3.11,<4"
 readme = "README.md"
 license = "MIT"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: 3.13",
-    "Programming Language :: Python :: 3.14",
-]
+classifiers = ["Programming Language :: Python :: 3", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14"]
 dependencies = [
     "lfortune>=0.3.2,<0.4",
     "fortunes-freebsd-classic>=2021.8.7,<2022",
