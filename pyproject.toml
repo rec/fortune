@@ -1,6 +1,6 @@
 [project]
 name = "fortune"
-version = "0.1.0"
+version = "0.2.0"
 description = "🐘 A Mastodon bot for /usr/games/fortune 🐘"
 authors = [{ name = "Tom Ritchford", email = "tom@swirly.com" }]
 requires-python = ">=3.11,<4"
