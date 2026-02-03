@@ -1,8 +1,8 @@
-from functools import cache
-from mastodon import Mastodon
 import subprocess
 import time
 import traceback
+
+from mastodon import Mastodon
 
 ENABLE_SEND = True
 KWARGS = {'text': True, 'stdout': subprocess.PIPE}
